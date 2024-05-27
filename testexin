@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data de Publicação Estilo Instagram</title>
+    <style>
+        .post {
+            max-width: 500px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .post img {
+            width: 100%;
+            height: auto;
+        }
+
+        .post-content {
+            padding: 15px;
+        }
+
+        .post-content .username {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .post-content .description {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .post-footer {
+            padding: 15px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .post-footer .time {
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <img src="your-image-url.jpg" alt="Post Image">
+        <div class="post-content">
+            <span class="username">username</span>
+            <span class="description">Esta é uma descrição da postagem, igual ao estilo do Instagram.</span>
+        </div>
+        <div class="post-footer">
+            <span class="time" id="post-time"></span>
+        </div>
+    </div>
+
+    <script>
+        function formatDate(date) {
+            const months = [
+                "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+                "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+            ];
+            const day = date.getDate();
+            const month = months[date.getMonth()];
+            const year = date.getFullYear();
+            return `Publicado em ${day} de ${month} de ${year}`;
+        }
+
+        function setPostDate() {
+            const postTimeElement = document.getElementById('post-time');
+            const postDate = new Date();  // Defina a data de publicação aqui
+            postTimeElement.textContent = formatDate(postDate);
+        }
+
+        setPostDate();
+    </script>
+</body>
+</html>
