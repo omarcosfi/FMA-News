@@ -3,6 +3,9 @@
             body {
                 background-color: #4FC0E8;
             }
+            #logopage {
+               border-radius: 50%;
+            }
             #menu {
                 display: inline-block;
             }
