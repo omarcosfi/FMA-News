@@ -127,3 +127,14 @@
         #bull {
             color: rgb(198, 197, 197);
         }
+        @media(max-width: 750px) {
+            .linha-vertical {
+                display: none;
+            }
+            #menu_lateral {
+                position: fixed;
+                border-top: 5px solid #ddd;
+                background-color: #4FC0E8;
+                bottom: 6px;
+            }
+        }
