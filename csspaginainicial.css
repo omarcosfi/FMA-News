@@ -135,7 +135,9 @@
                 position: fixed;
                 border-top: 5px solid #ddd;
                 background-color: #4FC0E8;
-                bottom: 6px;
                 flex-direction: row;
+                top: 90%;
+                right: 50%;
+                margin: 0px 0px;
             }
         }
