@@ -136,5 +136,6 @@
                 border-top: 5px solid #ddd;
                 background-color: #4FC0E8;
                 bottom: 6px;
+                flex-direction: row;
             }
         }
