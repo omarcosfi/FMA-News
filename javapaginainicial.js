@@ -44,3 +44,17 @@
         }
 
         setPostDate();
+
+        function sizeOfThings(){
+            var windowWidth = window.innerWidth;
+            var windowHeight = window.innerHeight;
+            
+            
+            document.querySelector('.window-size').innerHTML = windowWidth + 'x' + windowHeight;
+          
+          };
+          sizeOfThings();
+          
+          window.addEventListener('resize', function(){
+              sizeOfThings();
+          });
